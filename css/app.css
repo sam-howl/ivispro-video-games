@@ -1,0 +1,107 @@
+.tooltip {
+  position: absolute;
+  font-size: 12px;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+  background-color: #313335;
+  border: 1px dashed white;
+  padding: 10px;
+
+}
+
+button {
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  width: 80px
+}
+
+.btn-group {
+  background-color: #1a237e;
+  margin-bottom: 20px;
+}
+
+.btn-group .btn {
+  background-color: #1a237e;
+  border: 1px solid #1a237e;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child){
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #00519d;
+}
+
+.button-pressed {
+  background-color: #49B0A3;
+  border: 1px solid #49B0A3;
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.bubble {
+  opacity: 60%;
+}
+
+.bubble:hover {
+  opacity: 100%;
+}
+
+.bubble-pressed {
+  opacity: 100%;
+}
+
+.chart-title {
+  font-size: 23px;
+  font-weight: bold;
+  fill: white;
+}
+
+html {
+  background-color: #313335;
+}
+
+text {
+  fill: white;
+}
+
+#barChart, #lineChart, #scatterChart {
+  margin-top: 50px;
+  position: relative;
+}
+
+#svgLinePrices, #svgPriceScatter {
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 17px;
+}
+
+#scatterLegend {
+  position: absolute;
+  right: 0px;
+  top: 270px;
+  width: 120px;
+}
+
+#svgLegend, #canvasLegend {
+  margin-top: 35px;
+}
